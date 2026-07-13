@@ -72,7 +72,8 @@ a { color: var(--red); }
 /* --- Header / nav -------------------------------------------------------- */
 
 .site-header {
-  background: var(--ink);
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -82,31 +83,12 @@ a { color: var(--red); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
 }
 
-.logo {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.55rem;
-  text-transform: uppercase;
-  color: var(--white);
-  text-decoration: none;
-  letter-spacing: 0.03em;
-  line-height: 1;
-}
-
-.logo span { color: var(--red); }
-.logo small {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.62rem;
-  font-weight: 500;
-  letter-spacing: 0.32em;
-  color: #9a9ea8;
-  margin-top: 0.2rem;
-}
+.logo { display: inline-flex; align-items: center; text-decoration: none; }
+.logo img { height: 58px; width: auto; display: block; }
 
 .main-nav ul {
   display: flex;
@@ -120,14 +102,14 @@ a { color: var(--red); }
   font-size: 1.02rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #cfd2d8;
+  color: #3a3d44;
   text-decoration: none;
   padding: 0.3rem 0;
   border-bottom: 2px solid transparent;
 }
 
-.main-nav a:hover { color: var(--white); }
-.main-nav a.active { color: var(--white); border-bottom-color: var(--red); }
+.main-nav a:hover { color: var(--ink); }
+.main-nav a.active { color: var(--ink); border-bottom-color: var(--red); }
 
 .nav-cta {
   background: var(--red);
@@ -149,7 +131,7 @@ a { color: var(--red); }
   display: block;
   width: 26px;
   height: 3px;
-  background: var(--white);
+  background: var(--ink);
   margin: 5px 0;
   transition: 0.25s;
 }
@@ -201,7 +183,6 @@ a { color: var(--red); }
 
 .hero-img img {
   border-radius: var(--radius);
-  filter: grayscale(1) contrast(1.05);
   box-shadow: 0 24px 60px rgba(0,0,0,0.45);
 }
 
@@ -400,7 +381,10 @@ a { color: var(--red); }
 
 .split img { border-radius: var(--radius); }
 
-.split .img-bw { filter: grayscale(1) contrast(1.05); }
+.split .img-tall { max-width: 420px; margin: 0 auto; }
+
+.collage-band { padding: 0; }
+.collage-band img { width: 100%; display: block; }
 
 /* --- CTA band ------------------------------------------------------------------------ */
 
@@ -523,8 +507,9 @@ a { color: var(--red); }
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--ink);
-    border-top: 1px solid #2c2f37;
+    background: var(--white);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
     padding: 1rem 1.5rem 1.5rem;
   }
   .main-nav.open { display: block; }
