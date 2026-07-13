@@ -458,6 +458,49 @@ a { color: var(--red); }
 .social-links svg { width: 17px; height: 17px; fill: #cfd2d8; }
 .social-links a:hover svg { fill: var(--white); }
 
+/* --- Promo code box ----------------------------------------------------------------------- */
+
+.promo-box {
+  background: var(--white);
+  border: 2px dashed var(--red);
+  border-radius: var(--radius);
+  padding: 1.8rem;
+  text-align: center;
+}
+
+.promo-box .promo-label {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.promo-box .promo-code {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  letter-spacing: 0.12em;
+  color: var(--ink);
+  margin: 0.4rem 0;
+  user-select: all;
+}
+
+.promo-box .promo-note { color: var(--muted); font-size: 0.98rem; }
+
+.brand-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.2rem; }
+.brand-tags span {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--line);
+  background: var(--white);
+  border-radius: 999px;
+  padding: 0.3rem 0.95rem;
+  font-size: 0.95rem;
+  color: #3a3d44;
+}
+
 /* --- Contact page ----------------------------------------------------------------------- */
 
 .contact-info dt {
