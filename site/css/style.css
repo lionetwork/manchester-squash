@@ -488,6 +488,32 @@ a { color: var(--red); }
 
 .promo-box .promo-note { color: var(--muted); font-size: 0.98rem; }
 
+.sponsor-logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.sponsor-logos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 2.2rem 2rem;
+  transition: border-color 0.2s;
+}
+
+.sponsor-logos a:hover { border-color: var(--red); }
+
+.sponsor-logos img { max-height: 52px; width: auto; max-width: 100%; }
+
+@media (max-width: 560px) {
+  .sponsor-logos { grid-template-columns: 1fr; }
+}
+
 .brand-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.2rem; }
 .brand-tags span {
   font-family: var(--font-display);
