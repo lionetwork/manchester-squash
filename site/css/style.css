@@ -458,6 +458,40 @@ a { color: var(--red); }
 .social-links svg { width: 17px; height: 17px; fill: #cfd2d8; }
 .social-links a:hover svg { fill: var(--white); }
 
+/* --- Google review badge -------------------------------------------------------------------- */
+
+.google-badges { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2.6rem; }
+
+.google-badge {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.6rem;
+  flex-wrap: wrap;
+}
+
+.google-badge .score {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.google-badge .stars { color: #fbbc04; font-size: 1.25rem; letter-spacing: 2px; white-space: nowrap; }
+
+.google-badge .meta { flex: 1; min-width: 10rem; }
+.google-badge .meta strong { display: block; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.05em; }
+.google-badge .meta span { color: var(--muted); font-size: 0.95rem; }
+
+.google-badge .btn { padding: 0.55rem 1.2rem; font-size: 0.95rem; }
+
+@media (max-width: 700px) {
+  .google-badges { grid-template-columns: 1fr; }
+}
+
 /* --- Promo code box ----------------------------------------------------------------------- */
 
 .promo-box {
